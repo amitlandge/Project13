@@ -4,8 +4,12 @@ body {
   margin: 0%;
   padding: 0%;
   font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
 }
 
+html {
+  font-size: 62.2%;
+}
 .container {
   padding-top: 2%;
   width: 100%;
@@ -20,7 +24,7 @@ body {
   align-items: center;
 }
 .navlist {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +35,7 @@ body {
 .nav-link {
   color: aliceblue;
   text-decoration: none;
-  font-size: 2.4vmin;
+  font-size: 1.8rem;
 }
 .logo > img {
   width: 70%;
@@ -43,7 +47,7 @@ body {
 }
 .nav-btn {
   background-color: #1bbcef;
-  padding: 8px 15px;
+  padding: 0.8rem 1.5rem;
   font-family: "Poppins", sans-serif;
   color: aliceblue;
   border: none;
@@ -60,12 +64,12 @@ body {
   width: 30%;
 }
 .hero-left > h1 {
-  font-size: 7vmin;
+  font-size: 5rem;
   font-weight: 500;
 }
 .hero-left > p {
-  font-size: 2.4vmin;
-  letter-spacing: 1px;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
 }
 .hero-right {
   width: 50%;
@@ -108,7 +112,7 @@ h4 {
   text-align: center;
 }
 .section02 > h1 {
-  font-size: 6vmin;
+  font-size: 5rem;
   font-weight: 500;
 }
 .cards {
@@ -117,71 +121,82 @@ h4 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
 }
 .card {
   width: 18%;
-  padding: 20px 5px;
+  padding: 2rem 0.5rem;
   box-shadow: 0px 5px 10px rgb(63, 60, 60);
   margin-bottom: 5%;
   border-radius: 5px;
 }
 .card-img > img {
-  width: 70px;
+  width: 7rem;
 }
-.forth>img{
-    color: #6a2fbf;
+.forth > img {
+  color: #6a2fbf;
 }
-.orange,.green,.blue{
+.orange,
+.green,
+.blue {
   display: flex;
   justify-content: baseline;
   align-items: baseline;
 }
-i{
-  font-size: 4vmin;
+i {
+  font-size: 2rem;
 }
-.feature h4{
-  font-size: 3vmin;
+.feature h4 {
+  font-size: 2rem;
 }
-.orange>i{
+.orange > i {
   color: orange;
   margin-right: 5px;
 }
-.green>i{
+.green > i {
   color: green;
   margin-right: 5px;
 }
-.blue>i{
+.blue > i {
   color: rgb(6, 161, 223);
   margin-right: 5px;
 }
-.navbar>i{
-display: none;
-color: white;
-font-size: 3vmin;
+.navbar > i {
+  display: none;
+  color: white;
+  font-size: 2rem;
 }
-@media only screen and (max-width:1200px){
-  .navlist{
+@media only screen and (max-width: 1200px) {
+ 
+  .hero-right {
     display: none;
   }
-  .navbar>i{
-    display: block;
-  }
-  .hero-right{
-    display: none;
-  }
-  .hero-left{
+  .hero-left {
     width: 80%;
   }
 }
-@media only screen and (max-width:1000px){
-  .section-left{
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 55%;
+  }
+  .navlist {
     display: none;
   }
-  .card{
+  .navbar > i {
+    display: block;
+  }
+  .section-left {
+    display: none;
+  }
+  .card {
     width: 50%;
   }
-.cards{
-  flex-direction: column;
+  .cards {
+    flex-direction: column;
+  }
 }
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
 }
